@@ -1,0 +1,17 @@
+#btnAjouter{
+    -fx-background-color: #3FBA48;
+}
+
+#btnAjouter:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #3FBA88;
+}
+
+#btnSupprimer{
+    -fx-background-color: #DD3939;
+}
+
+#btnSupprimer:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #DD4A39;
+}
