@@ -2,15 +2,13 @@ package fr.romain.bibliotheque.entity;
 
 public class Book {
     // Members
-    private int id;
     private String title;
     private String author;
     private int year;
     private int pages;
 
     // Constructor
-    public Book(int id, String title, String author, int year, int pages){
-        this.id = id;
+    public Book(String title, String author, int year, int pages){
         this.title = title;
         this.author = author;
         this.year = year;
@@ -18,14 +16,6 @@ public class Book {
     }
 
     // Getter & Setter
-    public int getId() {
-        return this.id;
-    }
-
-    public void set_id(int _id) {
-        this.id = _id;
-    }
-
     public String getTitle() {
         return this.title;
     }

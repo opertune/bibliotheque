@@ -7,13 +7,9 @@ public class ConnectionBDD implements Constant {
     private Connection databaseLink;
 
     public Connection getConnection() {
-        String user = DBUSER;
-        String password = DBPW;
-        String url = DBURL;
-
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            databaseLink = DriverManager.getConnection(url, user, password);
+            databaseLink = DriverManager.getConnection(DBURL, DBUSER, DBPW);
             System.out.println("Connection open");
         } catch (Exception e) {
             e.printStackTrace();

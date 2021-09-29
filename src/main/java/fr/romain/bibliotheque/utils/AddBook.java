@@ -7,9 +7,8 @@ import java.sql.Statement;
 
 public class AddBook {
     // Members
-    private ConnectionBDD dataBaseConnection = new ConnectionBDD();
-    private Connection connectDB = dataBaseConnection.getConnection();
-    private Book _book;
+    private final Connection connectDB = Utils.databaseConnection();
+    private final Book _book;
 
     // Constructor
     public AddBook(Book book){
@@ -20,20 +19,14 @@ public class AddBook {
     // Methods
     // Insert book in database
     private void requestInsertBook(){
-        String querry = "INSERT INTO book (id, title, author, year, pages) VALUES ('" + _book.getId() + "','" +_book.getTitle()+ "','"
+        String querry = "INSERT INTO book (title, author, year, pages) VALUES ('" +_book.getTitle()+ "','"
                 + _book.getAuthor() + "','" + _book.getYear() + "','" + _book.getPages() + "')";
         try{
+            // Execute querry
             Statement statement = connectDB.createStatement();
             statement.executeUpdate(querry);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        closeDDB();
-    }
 
-    // Close database
-    private void closeDDB(){
-        try{
+            // Close database connection
             connectDB.close();
             System.out.println("Connection closed");
         }catch (Exception e){

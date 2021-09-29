@@ -9,32 +9,32 @@
 
 <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="747.0" style="-fx-background-color: #211f20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.romain.bibliotheque.controller.MainController">
    <children>
-      <TextField fx:id="txtTitre" layoutX="45.0" layoutY="22.0" promptText="Titre">
+      <TextField fx:id="txtTitre" layoutX="45.0" layoutY="22.0" promptText="Titre" style="-fx-alignment: center;">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtAuteur" layoutX="45.0" layoutY="57.0" promptText="Auteur">
+      <TextField fx:id="txtAuteur" layoutX="45.0" layoutY="58.0" promptText="Auteur" style="-fx-alignment: center;">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtAnnee" layoutX="45.0" layoutY="91.0" promptText="Année">
+      <TextField fx:id="txtAnnee" layoutX="45.0" layoutY="94.0" promptText="Année" style="-fx-alignment: center;">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtPages" layoutX="45.0" layoutY="127.0" promptText="Pages">
+      <TextField fx:id="txtPages" layoutX="45.0" layoutY="130.0" promptText="Pages" style="-fx-alignment: center;">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
-      <Button fx:id="btnAjouter" layoutX="45.0" layoutY="163.0" mnemonicParsing="false" onAction="#clickBtnAjouter" prefHeight="31.0" prefWidth="199.0" text="Ajouter">
+      <Button fx:id="btnAjouter" layoutX="45.0" layoutY="166.0" mnemonicParsing="false" onAction="#clickBtnAjouter" prefHeight="31.0" prefWidth="199.0" text="Ajouter">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btnSupprimer" layoutX="45.0" layoutY="201.0" mnemonicParsing="false" onAction="#clickBtnSupprimer" prefHeight="31.0" prefWidth="199.0" text="Supprimer">
+      <Button fx:id="btnSupprimer" layoutX="45.0" layoutY="203.0" mnemonicParsing="false" onAction="#clickBtnSupprimer" prefHeight="31.0" prefWidth="199.0" text="Supprimer">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -44,10 +44,10 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
          <columns>
-            <TableColumn fx:id="tcTitre" editable="false" prefWidth="75.0" sortable="false" text="Titre" />
-            <TableColumn fx:id="tcAuteur" editable="false" prefWidth="75.0" sortable="false" text="Auteur" />
-            <TableColumn fx:id="tcAnnee" editable="false" prefWidth="75.0" sortable="false" text="Année" />
-            <TableColumn fx:id="tcPages" editable="false" prefWidth="75.0" sortable="false" text="Pages" />
+            <TableColumn fx:id="tcTitre" editable="false" prefWidth="75.0" sortable="false" style="-fx-alignment: center;" text="Titre" />
+            <TableColumn fx:id="tcAuteur" editable="false" prefWidth="75.0" sortable="false" style="-fx-alignment: center;" text="Auteur" />
+            <TableColumn fx:id="tcAnnee" editable="false" prefWidth="75.0" sortable="false" style="-fx-alignment: center;" text="Année" />
+            <TableColumn fx:id="tcPages" editable="false" prefWidth="75.0" sortable="false" style="-fx-alignment: center;" text="Pages" />
          </columns>
       </TableView>
    </children>
