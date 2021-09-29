@@ -2,7 +2,6 @@ package fr.romain.bibliotheque.controller;
 
 import fr.romain.bibliotheque.entity.Book;
 import fr.romain.bibliotheque.utils.AddBook;
-import fr.romain.bibliotheque.utils.ConnectionBDD;
 import fr.romain.bibliotheque.utils.DelBook;
 import fr.romain.bibliotheque.utils.Utils;
 import javafx.application.Platform;
@@ -18,9 +17,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -67,7 +63,11 @@ public class MainController implements Initializable {
     @FXML
     void clickBtnSupprimer(ActionEvent event) {
         // Delete selected Book
-        new DelBook(tvDDB.getSelectionModel().getSelectedItem(), tvDDB);
+        try {
+            new DelBook(tvDDB.getSelectionModel().getSelectedItem(), tvDDB, data);
+        }catch (Exception e){
+            System.out.println("No book selected");
+        }
     }
 
     @Override
