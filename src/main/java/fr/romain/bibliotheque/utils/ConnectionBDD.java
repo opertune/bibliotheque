@@ -3,14 +3,13 @@ package fr.romain.bibliotheque.utils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class ConnectionBDD {
+public class ConnectionBDD implements Constant {
     private Connection databaseLink;
 
     public Connection getConnection() {
-        String db = "bibliotheque";
-        String user = "root";
-        String password = "";
-        String url = "jdbc:mysql://localhost:3306/" + db;
+        String user = DBUSER;
+        String password = DBPW;
+        String url = DBURL;
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

@@ -20,9 +20,8 @@ public class AddBook {
     // Methods
     // Insert book in database
     private void requestInsertBook(){
-        String querry = "INSERT INTO book (id, title, author, year, pages) VALUES ('" + _book.get_id() + "','" +_book.get_title()+ "','"
-                + _book.get_author() + "','" + _book.get_year() + "','" + _book.get_pages() + "')";
-
+        String querry = "INSERT INTO book (id, title, author, year, pages) VALUES ('" + _book.getId() + "','" +_book.getTitle()+ "','"
+                + _book.getAuthor() + "','" + _book.getYear() + "','" + _book.getPages() + "')";
         try{
             Statement statement = connectDB.createStatement();
             statement.executeUpdate(querry);

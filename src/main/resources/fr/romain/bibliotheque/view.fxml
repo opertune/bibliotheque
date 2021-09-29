@@ -40,15 +40,15 @@
          </font>
       </Button>
       <TableView fx:id="tvDDB" layoutX="274.0" layoutY="22.0" prefHeight="463.0" prefWidth="450.0">
-        <columns>
-          <TableColumn fx:id="tvDDBTitre" editable="false" prefWidth="75.0" sortable="false" text="Titre" />
-          <TableColumn fx:id="tvDDBAuteur" editable="false" prefWidth="75.0" sortable="false" text="Auteur" />
-            <TableColumn fx:id="tvDDBAnnee" editable="false" prefWidth="75.0" sortable="false" text="Année" />
-            <TableColumn fx:id="tvDDBPages" editable="false" prefWidth="75.0" sortable="false" text="Pages" />
-        </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="tcTitre" editable="false" prefWidth="75.0" sortable="false" text="Titre" />
+            <TableColumn fx:id="tcAuteur" editable="false" prefWidth="75.0" sortable="false" text="Auteur" />
+            <TableColumn fx:id="tcAnnee" editable="false" prefWidth="75.0" sortable="false" text="Année" />
+            <TableColumn fx:id="tcPages" editable="false" prefWidth="75.0" sortable="false" text="Pages" />
+         </columns>
       </TableView>
    </children>
 </Pane>

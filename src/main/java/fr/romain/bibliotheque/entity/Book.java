@@ -2,59 +2,59 @@ package fr.romain.bibliotheque.entity;
 
 public class Book {
     // Members
-    private int _id;
-    private String _title;
-    private String _author;
-    private int _year;
-    private int _pages;
+    private int id;
+    private String title;
+    private String author;
+    private int year;
+    private int pages;
 
     // Constructor
     public Book(int id, String title, String author, int year, int pages){
-        this._id = id;
-        this._title = title;
-        this._author = author;
-        this._year = year;
-        this._pages = pages;
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.pages = pages;
     }
 
     // Getter & Setter
-    public int get_id() {
-        return _id;
+    public int getId() {
+        return this.id;
     }
 
     public void set_id(int _id) {
-        this._id = _id;
+        this.id = _id;
     }
 
-    public String get_title() {
-        return _title;
+    public String getTitle() {
+        return this.title;
     }
 
     public void set_title(String _title) {
-        this._title = _title;
+        this.title = _title;
     }
 
-    public String get_author() {
-        return _author;
+    public String getAuthor() {
+        return this.author;
     }
 
     public void set_author(String _author) {
-        this._author = _author;
+        this.author = _author;
     }
 
-    public int get_year() {
-        return _year;
+    public int getYear() {
+        return this.year;
     }
 
     public void set_year(int _year) {
-        this._year = _year;
+        this.year = _year;
     }
 
-    public int get_pages() {
-        return _pages;
+    public int getPages() {
+        return this.pages;
     }
 
     public void set_pages(int _pages) {
-        this._pages = _pages;
+        this.pages = _pages;
     }
 }

@@ -9,4 +9,5 @@ module fr.romain.bibliotheque {
     exports fr.romain.bibliotheque;
     exports fr.romain.bibliotheque.controller;
     opens fr.romain.bibliotheque.controller to javafx.fxml;
+    opens fr.romain.bibliotheque.entity to javafx.base;
 }
