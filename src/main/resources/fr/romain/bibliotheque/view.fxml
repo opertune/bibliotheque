@@ -4,6 +4,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -29,17 +30,17 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
-      <Button fx:id="btnAjouter" layoutX="45.0" layoutY="166.0" mnemonicParsing="false" onAction="#clickBtnAjouter" prefHeight="31.0" prefWidth="199.0" text="Ajouter">
+      <Button fx:id="btnAjouter" layoutX="45.0" layoutY="202.0" mnemonicParsing="false" onAction="#clickBtnAjouter" prefHeight="31.0" prefWidth="199.0" text="Ajouter">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btnSupprimer" layoutX="45.0" layoutY="203.0" mnemonicParsing="false" onAction="#clickBtnSupprimer" prefHeight="31.0" prefWidth="199.0" text="Supprimer">
+      <Button fx:id="btnSupprimer" layoutX="45.0" layoutY="239.0" mnemonicParsing="false" onAction="#clickBtnSupprimer" prefHeight="31.0" prefWidth="199.0" text="Supprimer">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TableView fx:id="tvDDB" layoutX="274.0" layoutY="22.0" prefHeight="463.0" prefWidth="450.0">
+      <TableView fx:id="tvDDB" layoutX="274.0" layoutY="22.0" onMouseClicked="#tvClick" prefHeight="463.0" prefWidth="450.0">
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
@@ -50,5 +51,16 @@
             <TableColumn fx:id="tcPages" editable="false" prefWidth="75.0" sortable="false" style="-fx-alignment: center;" text="Pages" />
          </columns>
       </TableView>
+      <TextField fx:id="txtImagePath" layoutX="45.0" layoutY="166.0" prefHeight="31.0" prefWidth="161.0" promptText="Image Path">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAddImage" layoutX="211.0" layoutY="166.0" mnemonicParsing="false" onAction="#clickBtnAddImage" prefHeight="31.0" prefWidth="31.0" text="...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="ivImage" fitHeight="208.0" fitWidth="200.0" layoutX="44.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </Pane>

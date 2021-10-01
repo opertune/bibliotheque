@@ -1,9 +1,12 @@
 package fr.romain.bibliotheque;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+
 import java.io.IOException;
 
 public class Main extends Application {
@@ -16,6 +19,13 @@ public class Main extends Application {
         stage.setTitle("Bibliotheque");
         stage.setResizable(false);
         stage.setScene(scene);
+
+        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent windowEvent) {
+                System.exit(0);
+            }
+        });
 
         stage.show();
     }

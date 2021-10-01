@@ -4,6 +4,7 @@ module fr.romain.bibliotheque {
     requires javafx.graphics;
     requires mysql.connector.java;
     requires java.sql;
+    requires java.desktop;
 
     opens fr.romain.bibliotheque to javafx.fxml;
     exports fr.romain.bibliotheque;

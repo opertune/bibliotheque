@@ -1,14 +1,20 @@
 package fr.romain.bibliotheque.entity;
 
+import javafx.scene.image.Image;
+
 public class Book {
     // Members
+    private String img;
+    private int id;
     private String title;
     private String author;
     private int year;
     private int pages;
 
     // Constructor
-    public Book(String title, String author, int year, int pages){
+    public Book(String img, int id, String title, String author, int year, int pages){
+        this.img = img;
+        this.id = id;
         this.title = title;
         this.author = author;
         this.year = year;
@@ -47,4 +53,8 @@ public class Book {
     public void set_pages(int _pages) {
         this.pages = _pages;
     }
+
+    public int getId() { return this.id; }
+
+    public void set_id(int id) { this.id=id; }
 }

@@ -15,3 +15,12 @@
     -fx-cursor: hand;
     -fx-background-color: #DD4A39;
 }
+
+#btnAddImage{
+    -fx-background-color: #95A5A6;
+}
+
+#btnAddImage:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #707B7C;
+}

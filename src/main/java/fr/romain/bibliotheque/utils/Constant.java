@@ -5,4 +5,5 @@ public interface Constant {
     String DBUSER = "root";
     String DBPW = "";
     String DBURL = "jdbc:mysql://localhost:3306/" + DBNAME;
+    String IMAGEPATH = "src/main/java/fr/romain/bibliotheque/images/";
 }
